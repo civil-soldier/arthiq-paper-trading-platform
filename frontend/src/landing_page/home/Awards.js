@@ -7,10 +7,11 @@ function Awards() {
         {/* LEFT IMAGE */}
         <div className="col-6 p-5">
           <img
-            src="/media/images/largestBroker.svg"
-            alt="Awards Image"
-            style={{ width: "100%", maxWidth: "480px" }}
-          />
+  src="/media/images/learning-platform.png"
+  alt="Awards Image"
+  className="awards-blend"
+  style={{ width: "100%", maxWidth: "480px" }}
+/>
         </div>
 
         {/* RIGHT TEXT */}
@@ -24,7 +25,7 @@ function Awards() {
               whiteSpace: "nowrap",
             }}
           >
-            Largest stock broker in India
+            Built for serious market learners
           </h1>
 
           {/* Subtitle */}
@@ -36,8 +37,7 @@ function Awards() {
               marginBottom: "30px",
             }}
           >
-            2+ million Zerodha clients contribute to over 15% of all retail
-            order volumes in India daily by trading and investing in:
+            Arthiq provides a realistic trading environment where you can experience real market conditions without risking real capital.
           </p>
 
           <div className="row">
@@ -71,13 +71,6 @@ function Awards() {
               </ul>
             </div>
           </div>
-
-          {/* Logos */}
-          <img
-            src="/media/images/pressLogos.png"
-            alt="Press logos"
-            style={{ width: "85%" }}
-          />
         </div>
       </div>
     </div>

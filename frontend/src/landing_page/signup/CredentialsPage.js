@@ -66,7 +66,7 @@ const CredentialsPage = () => {
     <div className="credentials-wrapper">
       <div className="credentials-card">
         <h1>Create login credentials</h1>
-        <p className="subtitle">This will be your permanent Zerodha login ID</p>
+        <p className="subtitle">This will be your permanent Arthiq login ID</p>
 
         {error && <p className="error-text">{error}</p>}
 
@@ -79,9 +79,9 @@ const CredentialsPage = () => {
           onChange={handleChange}
         />
 
-        <p style={{ fontSize: "12px", color: "#777", marginBottom: "10px" }}>
-          Minimum 6 characters
-        </p>
+        <p className="password-hint">
+  Minimum 6 characters
+</p>
 
         <button className="primary-btn" disabled={loading} onClick={handleSubmit}>
           {loading ? "Creating..." : "Complete signup"}

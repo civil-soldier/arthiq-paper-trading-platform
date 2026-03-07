@@ -1,0 +1,14 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="30" cy="30" r="18" stroke="#20B2AA" stroke-width="4"/>
+  <path d="M42 42L52 52" stroke="#20B2AA" stroke-width="4" stroke-linecap="round"/>
+  <path d="M30 40C30 40 32 30 45 20M45 20H38M45 20V27" stroke="#00FFCC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <text x="65" y="38" fill="white" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 28px; letter-spacing: -1px;">
+    Arthiq
+  </text>
+  
+  <rect x="155" y="18" width="35" height="18" rx="4" fill="#333333"/>
+  <text x="159" y="31" fill="#20B2AA" style="font-family: Arial, sans-serif; font-weight: bold; font-size: 10px; text-transform: uppercase;">
+    SIM
+  </text>
+</svg>

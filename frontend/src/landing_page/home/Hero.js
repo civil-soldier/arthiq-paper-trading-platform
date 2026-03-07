@@ -5,48 +5,49 @@ function Hero() {
   const [hover, setHover] = useState(false);
 
   return (
-    <div className="container p-5 mb-5">
-      <div className="row text-center d-flex flex-column align-items-center">
+    <div className="hero-wrapper">
+      <div className="container hero-content text-center d-flex flex-column align-items-center">
+
         <img
-          src="/media/images/homeHero.svg"
+          src="/media/images/homeHero.png"
           alt="Hero Image"
-          className="mb-5"
-          style={{ width: "80%", maxWidth: "700px" }}
+          className="hero-image mb-5"
         />
 
         <h1 className="mt-5" style={{ fontWeight: 500, fontSize: "32px" }}>
-          Invest in everything
+          Trade smarter. Practice first.
         </h1>
 
         <p
           className="mt-3"
-          style={{ fontSize: "23px", color: "#555", letterSpacing: "0.3px" }}
+          style={{ fontSize: "23px", color: "#b8b8d6" }}
         >
-          Online platform to invest in stocks, derivatives, mutual funds, ETFs,
-          bonds, and more.
+          Arthiq is a real-time paper trading platform designed to help you practice stock market strategies using virtual capital.
+No real money. No financial risk.
         </p>
 
-       <Link to="/signup" style={{ textDecoration: "none" }}>
-        <button
-          onMouseEnter={() => setHover(true)}
-          onMouseLeave={() => setHover(false)}
-          style={{
-            backgroundColor: hover ? "#1a1717ff" : "#387ed1",
-            color: hover ? "#fff" : "#fff",
-            border: "none",
-            padding: "12px 24px",
-            width: "240px",
-            borderRadius: "4px",
-            fontSize: "18px",
-            fontWeight: "500",
-            marginTop: "20px",
-            cursor: "pointer",
-            transition: "0.2s ease",
-          }}
-        >
-          Sign up for free
-        </button>
-         </Link>
+        <Link to="/signup" style={{ textDecoration: "none" }}>
+          <button
+            onMouseEnter={() => setHover(true)}
+            onMouseLeave={() => setHover(false)}
+            style={{
+              backgroundColor: hover ? "#1a1717" : "#7c3aed",
+              color: "#fff",
+              border: "none",
+              padding: "12px 24px",
+              width: "240px",
+              borderRadius: "6px",
+              fontSize: "18px",
+              fontWeight: "500",
+              marginTop: "20px",
+              cursor: "pointer",
+              transition: "0.2s ease",
+            }}
+          >
+            Sign up for free
+          </button>
+        </Link>
+
       </div>
     </div>
   );

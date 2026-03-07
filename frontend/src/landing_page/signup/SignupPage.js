@@ -7,6 +7,7 @@ import Benefits from './Benefits';
 import Types from './Types';
 import FAQs from './FAQs';
 
+
 function SignupPage() {
     return ( 
         <>

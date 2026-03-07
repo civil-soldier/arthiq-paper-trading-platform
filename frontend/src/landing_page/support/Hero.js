@@ -7,12 +7,12 @@ function Hero() {
 
       {/* Top row */}
       <div className="support-hero-header">
-        <h1>Support Portal</h1>
+        <h1>Arthiq Help Center</h1>
         <button
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
           style={{
-            backgroundColor: hover ? "#1a1717ff" : "#387ed1",
+            backgroundColor: hover ? "#5b21b6" : "#7c3aed",
             color: "#fff",
             border: "none",
             padding: "10px 18px",
@@ -24,7 +24,7 @@ function Hero() {
             transition: "0.2s ease",
           }}
         >
-            My tickets
+            View my support requests
         </button>
       </div>
 
@@ -33,7 +33,7 @@ function Hero() {
         <span className="search-icon"><i class="fa-solid fa-magnifying-glass"></i></span>
         <input
           type="text"
-          placeholder="Eg: How do I open my account, How do I activate F&O..."
+          placeholder="Search help articles (e.g. How does paper trading work?)"
         />
       </div>
 

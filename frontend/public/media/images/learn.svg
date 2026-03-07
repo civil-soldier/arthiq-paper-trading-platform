@@ -1,0 +1,109 @@
+<svg width="100%" height="100%" viewBox="0 0 1600 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="1600" height="900" fill="#0B0E23" />
+
+  <defs>
+    <filter id="purpleGlowOuter" x="-15%" y="-15%" width="130%" height="130%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#8A2BE2" flood-opacity="0.25"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="purpleGlowAccent" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#8A2BE2" flood-opacity="0.8"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title { font-family: 'SF Pro Display', Arial, sans-serif; font-size: 32px; font-weight: 900; fill: #FFFFFF; }
+    .nav-label { font-family: 'SF Pro Display', Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #666666; }
+    .nav-active { font-family: 'SF Pro Display', Arial, sans-serif; font-size: 16px; font-weight: bold; fill: #8A2BE2; filter: url(#purpleGlowAccent); }
+    .card-title { font-family: 'SF Pro Display', Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #FFFFFF; }
+    .card-desc { font-family: Arial, sans-serif; font-size: 14px; fill: #888888; }
+    .btn-label { font-family: 'SF Pro Display', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #00FFCC; }
+  </style>
+
+  <g transform="translate(40, 40) scale(0.6)">
+    <circle cx="30" cy="30" r="18" stroke="#20B2AA" stroke-width="4"/>
+    <path d="M42 42L52 52" stroke="#20B2AA" stroke-width="4" stroke-linecap="round"/>
+    <path d="M30 40C30 40 32 30 45 20M45 20H38M45 20V27" stroke="#00FFCC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(100, 100)" opacity="0.95">
+    
+    <text x="0" y="30" class="title">ARTHIQ LEARN ACADEMY</text>
+    <g transform="translate(0, 70)">
+      <text x="0" y="0" class="nav-active">Trading basics</text>
+      <text x="150" y="0" class="nav-label">Investment strategies</text>
+      <text x="350" y="0" class="nav-label">Risk management</text>
+      <text x="500" y="0" class="nav-label">Market analysis</text>
+      <line x1="0" y1="10" x2="110" y2="10" stroke="#8A2BE2" stroke-width="3" filter="url(#purpleGlowAccent)"/>
+    </g>
+    
+    <g transform="translate(0, 150)" filter="url(#purpleGlowOuter)">
+      <rect width="1400" height="400" rx="20" fill="#141933" />
+      <text x="40" y="60" class="card-title">MODULE 03: Chart Patterns &amp; Trend Identification</text>
+      
+      <g transform="translate(80, 120)" stroke="#2D3762" stroke-dasharray="8 8" opacity="0.4">
+        <line x1="0" y1="0" x2="0" y2="250" />
+        <line x1="260" y1="0" x2="260" y2="250" />
+        <line x1="520" y1="0" x2="520" y2="250" />
+        <line x1="780" y1="0" x2="780" y2="250" />
+        <line x1="1040" y1="0" x2="1040" y2="250" />
+        <line x1="1300" y1="0" x2="1300" y2="250" stroke-dasharray="0" /> </g>
+      
+      <g transform="translate(80, 360)">
+        <path d="M0 -60 C 150 -100, 300 -180, 450 -120 S 600 -240, 750 -200 S 900 -140, 1050 -180 S 1200 -260, 1300 -220 V 10 H 0 Z" fill="#8A2BE2" opacity="0.05"/>
+        
+        <path d="M0 -60 C 150 -100, 300 -180, 450 -120 S 600 -240, 750 -200 S 900 -140, 1050 -180 S 1200 -260, 1300 -220" stroke="#8A2BE2" stroke-width="4" fill="none" filter="url(#purpleGlowAccent)"/>
+        
+        <circle cx="750" cy="-200" r="10" fill="#00FFCC" stroke="#0B0E23" stroke-width="3" filter="url(#purpleGlowAccent)"/>
+        <text x="770" y="-195" class="btn-label" font-size="12px">BREAKOUT POINT</text>
+      </g>
+      
+      <text x="1000" y="150" class="card-desc">Identify key market reversals.<br/>Learn how to spot breakouts<br/>before they happen.</text>
+      <g transform="translate(1000, 220)">
+        <rect width="180" height="40" rx="20" fill="#2D3762"/>
+        <rect width="180" height="40" rx="20" fill="none" stroke="#8A2BE2" stroke-width="2" filter="url(#purpleGlowAccent)"/>
+        <text x="90" y="25" class="btn-label" text-anchor="middle">START LESSON</text>
+      </g>
+    </g>
+    
+    <g transform="translate(0, 580)">
+      <text x="0" y="0" class="card-title">TOP EDUCATIONAL TOPICS</text>
+      
+      <g transform="translate(0, 40)">
+        <rect width="320" height="150" rx="16" fill="#141933" filter="url(#purpleGlowOuter)" />
+        <rect width="10" height="150" rx="5" fill="#8A2BE2" /> <text x="30" y="50" class="card-title" font-size="20px">OPTIONS TRADING</text>
+        <text x="30" y="80" class="card-desc">Call vs Put options explained.</text>
+      </g>
+      
+      <g transform="translate(360, 40)">
+        <rect width="320" height="150" rx="16" fill="#141933" />
+        <rect width="10" height="150" rx="5" fill="#8A2BE2" opacity="0.5"/> <text x="30" y="50" class="card-title" font-size="20px">DIVERSIFICATION</text>
+        <text x="30" y="80" class="card-desc">Manage risk by allocation.</text>
+      </g>
+      
+      <g transform="translate(720, 40)">
+        <rect width="320" height="150" rx="16" fill="#141933" />
+        <rect width="10" height="150" rx="5" fill="#8A2BE2" opacity="0.5"/> <text x="30" y="50" class="card-title" font-size="20px">INDICATORS 101</text>
+        <text x="30" y="80" class="card-desc">Using RSI and moving averages.</text>
+      </g>
+      
+      <g transform="translate(1080, 40)">
+        <rect width="320" height="150" rx="16" fill="#141933" />
+        <rect width="10" height="150" rx="5" fill="#8A2BE2" opacity="0.5"/> <text x="30" y="50" class="card-title" font-size="20px">CRYPTO BASICS</text>
+        <text x="30" y="80" class="card-desc">What is Blockchain technology?</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -48,11 +48,15 @@ const mobile = location.state?.mobile;
       <div className="row align-items-center">
         {/* LEFT IMAGE */}
         <div className="col-md-6 text-center">
-          <img
-            src="/media/images/otp.svg"
-            alt="email otp"
-            className="img-fluid email-illustration"
-          />
+          <div className="col-md-6 d-flex justify-content-center align-items-center">
+  <div className="email-image-wrapper">
+    <img
+      src="/media/images/otp.png"
+      alt="email otp"
+      className="img-fluid email-illustration"
+    />
+  </div>
+</div>
         </div>
 
         {/* RIGHT FORM */}

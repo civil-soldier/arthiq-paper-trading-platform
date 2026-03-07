@@ -7,66 +7,68 @@ function Navbar() {
       {/* Inline Zerodha CSS */}
       <style>{`
         .zerodha-nav {
-          background-color: #fafafa !important;
-          border-bottom: 1px solid #e6e6e6;
-          height: 68px;
-          font-family: "Inter", sans-serif;
-          box-shadow: 0 2px 40px rgba(0, 0, 0, 0.06);
-          display: flex;
-          align-items: center; /* vertical center */
+  background-color: #161625 !important;
+  border-bottom: 1px solid #2a2a3d;
+  height: 68px;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+}
 
-          position: sticky;   
-          top: 0;             
-          z-index: 1000;      
-        }
+.zerodha-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;                /* ensure proper centering */
+  display: flex;
+  align-items: center;
+  padding: 0 12px;               /* symmetric padding */
+}
 
-        .zerodha-container {
-          max-width: 1200px;
-          display: flex;
-          align-items: center;
-          padding: 0 2px 0 3px;
-        }
+/* Scoped nav link styling to avoid bootstrap override */
+.zerodha-nav .nav-link {
+  color: #b8b8d6 !important;
+  font-weight: 400 !important;   /* force normal */
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  height: 68px;
+  text-decoration: none;
+}
 
-        .nav-link {
-          color: #717171 !important;
-          font-weight: 500;
-          font-size: 16px;
-          transition: color 0.2s ease;
-          display: flex;
-          align-items: center;
-          height: 68px; /* vertical centering */
-        }
+.zerodha-nav .nav-link:hover {
+  color: #a78bfa !important;
+}
 
-        .nav-link:hover {
-          color: #507ec9 !important;
-        }
+.navbar-brand img {
+  width: 120px;
+  margin-left: 38px;
+  transform: translateY(0);
+}
 
-        .navbar-brand img {
-          width: 120px;
-          margin-left: 38px;
-          transform: translateY(0); /* perfect alignment */
-        }
+.navbar-nav {
+  gap: 22px;
+}
 
-        .navbar-nav {
-          gap: 22px;
-        }
+.navbar-toggler i {
+  font-size: 22px;
+  color: #a78bfa;
+}
 
-        .navbar-toggler i {
-          font-size: 22px;
-          color: #507ec9;
-        }
-
-        .nav-link.dropdown-toggle::after {
-          display: none !important;
+.nav-link.dropdown-toggle::after {
+  display: none !important;
+}
         }
       `}</style>
 
       {/* Navbar HTML */}
-      <nav className="navbar navbar-expand-lg navbar-light zerodha-nav p-2">
+      <nav className="navbar zerodha-nav navbar-expand-lg p-2">
         <div className="container-fluid zerodha-container">
           {/* Logo */}
           <Link className="navbar-brand" to={"/"}>
-            <img src="media/images/logo.svg" alt="Logo" />
+            <img src="media/images/logo1.svg" alt="Logo" />
           </Link>
 
           {/* Navbar Items */}
@@ -91,8 +93,8 @@ function Navbar() {
               </li>
 
               <li className="nav-item">
-                <Link className="nav-link" to={"/pricing"}>
-                  Pricing
+                <Link className="nav-link" to={"/community"}>
+                  Community
                 </Link>
               </li>
 

@@ -1,41 +1,51 @@
-import React, { useState } from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function OpenAccount() {
-
   const [hover, setHover] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const scrollToPhoneSection = () => {
-  const el = document.getElementById("signup-phone-section");
-  if (el) {
-    el.scrollIntoView({
-      behavior: "smooth",
-      block: "center",
-    });
-  }
-};
-
+  const handleClick = () => {
+    if (location.pathname === "/signup") {
+      // Already on signup page → scroll to top
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    } else {
+      // Navigate to signup page
+      navigate("/signup");
+    }
+  };
 
   return (
     <div className="container p-5 mb-5">
       <div className="row text-center d-flex flex-column align-items-center">
-        <h1 className="mt-5" style={{ fontWeight: 500, fontSize: "25px" }}>
-          Open a Zerodha account
+        <h1
+          className="mt-5"
+          style={{ fontWeight: 500, fontSize: "25px" }}
+        >
+          Start practicing today
         </h1>
 
         <p
           className="mt-3"
-          style={{ fontSize: "18px", color: "#555", letterSpacing: "0.3px" }}
+          style={{
+            fontSize: "18px",
+            color: "#555",
+            letterSpacing: "0.3px",
+          }}
         >
-          Modern platforms and apps, ₹0 investments, and flat ₹20 intraday and F&O trades.
+          Create a free account and begin trading with virtual capital in minutes.
         </p>
- 
+
         <button
-        onClick={scrollToPhoneSection}
+          onClick={handleClick}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
           style={{
-            backgroundColor: hover ? "#1a1717ff" : "#387ed1",
+            background: hover ? "#1a1717ff" : "linear-gradient(90deg, #6366f1, #0ea5e9)",
             color: "#fff",
             border: "none",
             padding: "12px 24px",

@@ -94,9 +94,9 @@ if (type === "mobile" && !mobile) {
   };
 
   const getBgColor = () => {
-    if (!otpComplete) return "#ccc";
-    if (hover) return "#1a1717ff";
-    return "#387ed1";
+    if (!otpComplete) return "#475666";
+    if (hover) return "#0ea5e9";
+    return "#6366f1";
   };
 
   return (
@@ -107,9 +107,9 @@ if (type === "mobile" && !mobile) {
       {/* Demo Mode Banner */}
       <div
         style={{
-          background: "#eef4ff",
-          border: "1px solid #c6dbff",
-          color: "#1a4fd8",
+          background: "#1c2536",
+          border: "1px solid #404d63",
+          color: "#a78bfa",
           padding: "12px 16px",
           borderRadius: "6px",
           marginBottom: "20px",
@@ -128,9 +128,11 @@ if (type === "mobile" && !mobile) {
       </div>
 
       {/* LEFT IMAGE */}
-      <div className="col-md-6 p-5 mt-4">
-        <img src="/media/images/otp.svg" alt="OTP" className="img-fluid" />
-      </div>
+      <div className="col-md-6 p-5 mt-4 d-flex justify-content-center">
+  <div className="otp-image-wrapper">
+    <img src="/media/images/otp.png" alt="OTP" className="img-fluid otp-image" />
+  </div>
+</div>
 
       {/* RIGHT SECTION */}
       <div className="col-md-6 p-5 mt-4">

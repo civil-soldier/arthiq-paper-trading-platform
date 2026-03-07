@@ -1,4 +1,4 @@
-# 🚀 Zerodha Paper Trading Platform
+# 🚀 Arthiq Paper Trading Platform
 
 A full-stack paper trading platform inspired by **Zerodha Kite**, built to simulate real stock trading with modern authentication, secure APIs, and a production-ready deployment architecture.
 
@@ -8,7 +8,7 @@ This platform allows users to create accounts, log in using a unique **User ID**
 
 ## 🔗 Live Demo
 
-### 🌐 Zerodha Paper Trading Platform  
+### 🌐 Arthiq Paper Trading Platform  
 https://zerodha-paper-trading-platform-64ee.vercel.app  
 *(Sign up required to access the dashboard)*
 

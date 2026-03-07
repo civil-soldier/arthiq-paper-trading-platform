@@ -79,9 +79,9 @@ const AccountActive = () => {
       {/* HEADER */}
       <header className="account-header">
         <img
-          src="/media/images/logo.svg"
+          src="/media/images/logo1.svg"
           alt="logo"
-          style={{ height: "17px", marginLeft: "80px" }}
+          style={{ height: "37px", marginLeft: "40px" }}
         />
 
         {/* USER MENU */}
@@ -116,29 +116,27 @@ const AccountActive = () => {
         <div className="account-card">
           <div className="card-left">
             <h1>
-              Your Zerodha account is active <span>🎉</span>
+              Welcome to Arthiq <span>🎉</span>
             </h1>
 
             <p className="desc">
-              To get started, log in to Zerodha Kite using your User ID and
-              password. You can refer to your registered email ID for more
-              details.
+              Your account setup is complete. You can now access the Arthiq trading dashboard using your User ID and password. Explore powerful tools to track markets, manage investments, and grow your portfolio.
             </p>
 
-            <p className="welcome">Welcome aboard, and happy investing!</p>
+            <p className="welcome">Welcome aboard — your investing journey starts now.</p>
 
             <button className="login-btn" onClick={handleLogin}>
               <img
-                src="/media/images/logo.png"
-                style={{
-                  width: "20px",
-                  height: "18px",
-                  marginBottom: "2px",
-                  marginRight: "10px",
-                }}
-                alt="kite"
+                src="/media/images/logo.svg"
+  alt="arthiq"
+  style={{
+    width: "26px",
+    height: "26px",
+    marginRight: "10px",
+    objectFit: "contain"
+  }}
               />
-              Login to Kite
+              Login to Nova
             </button>
           </div>
 
@@ -146,155 +144,6 @@ const AccountActive = () => {
             <img src="/media/images/account_activation.svg" alt="active" />
           </div>
         </div>
-
-        {/* VARSITY LIVE CARD */}
-        <section className="varsity-section">
-          <h2 className="varsity-title">New to stocks markets?</h2>
-          <div className="varsity-card" style={{ marginTop: "40px" }}>
-            <img
-              src="/media/images/star.svg" // ⭐ small star icon
-              alt="star"
-              className="varsity-star"
-            />
-            {/* Left content */}
-            <div className="varsity-left">
-              <h2 className="varsity-title">Varsity live</h2>
-
-              <p className="varsity-desc">
-                Free, live, interactive financial education program. Join now!
-              </p>
-            </div>
-
-            {/* Right illustration */}
-            <div className="varsity-right">
-              <img
-                src="/media/images/vlive.svg"
-                alt="varsity"
-                className="varsity-illustration"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* ZERODHA UNIVERSE */}
-        <section className="universe-section">
-          <h2 className="universe-title">Zerodha Universe</h2>
-
-          <div className="universe-grid">
-            {/* Card */}
-            <div className="universe-card">
-              <div className="universe-card-header">
-                <img
-                  src="/media/images/coin.svg"
-                  alt="Coin"
-                  className="universe-logo"
-                  style={{ width: "70px", height: "70px" }}
-                />
-              </div>
-              <div className="universe-card-body">
-                <p className="universe-desc">
-                  India's largest zero-commission direct mutual funds platform.
-                </p>
-              </div>
-            </div>
-
-            <div className="universe-card">
-              <div className="universe-card-header">
-                <img
-                  src="/media/images/console.svg"
-                  alt="Console"
-                  className="universe-logo"
-                  style={{ width: "100px", height: "100px" }}
-                />
-              </div>
-              <div className="universe-card-body">
-                <p className="universe-desc">
-                  Dashboard of your Zerodha account with insights, reports, and
-                  visualizations for trades and investments.
-                </p>
-              </div>
-            </div>
-
-            <div className="universe-card">
-              <div className="universe-card-header">
-                <img
-                  src="/media/images/varsity.svg"
-                  alt="Varsity"
-                  className="universe-logo"
-                />
-              </div>
-              <div className="universe-card-body">
-                <p className="universe-desc">
-                  Free and open stock market and financial education
-                </p>
-              </div>
-            </div>
-
-            <div className="universe-card">
-              <div className="universe-card-header">
-                <img
-                  src="/media/images/tijori.svg"
-                  alt="Tijori"
-                  className="universe-logo"
-                  style={{ width: "90px", height: "90px" }}
-                />
-              </div>
-              <div className="universe-card-body">
-                <p className="universe-desc">
-                  Comprehensive stock research & portfolio tracking platform.
-                </p>
-              </div>
-            </div>
-
-            <div className="universe-card">
-              <div className="universe-card-header">
-                <img
-                  src="/media/images/ditto.webp"
-                  alt="Ditto"
-                  className="universe-logo"
-                  style={{ width: "70px", height: "30px" }}
-                />
-              </div>
-              <div className="universe-card-body">
-                <p className="universe-desc">
-                  Insurance made easy! Understand your policy, get answers, and
-                  buy insurance—all in one place.
-                </p>
-              </div>
-            </div>
-
-            <div className="universe-card">
-              <div className="universe-card-header">
-                <img
-                  src="/media/images/sensibullLogo.svg"
-                  alt="Sensibull"
-                  className="universe-logo"
-                  style={{ width: "120px", height: "120px" }}
-                />
-              </div>
-              <div className="universe-card-body">
-                <p className="universe-desc">Trade Options like a Pro</p>
-              </div>
-            </div>
-
-            <div className="universe-card">
-              <div className="universe-card-header">
-                <img
-                  src="/media/images/streak.png"
-                  alt="Streak"
-                  className="universe-logo"
-                  style={{ width: "90px", height: "50px" }}
-                />
-              </div>
-              <div className="universe-card-body">
-                <p className="universe-desc">
-                  Technical analysis tool with live scanning, insights,
-                  backtesting, virtual deployment and more.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
       </section>
     </div>
   );

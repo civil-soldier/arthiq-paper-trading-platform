@@ -16,10 +16,10 @@ function Stats() {
               marginBottom: "40px",
             }}
           >
-            Trust with confidence
+            Why practice with Arthiq?
           </h1>
 
-          <h4 style={{ fontWeight: 500 }}>Customer-first always</h4>
+          <h4 style={{ fontWeight: 500 }}>Real-time simulation</h4>
           <p
             style={{
               color: "#666",
@@ -28,21 +28,10 @@ function Stats() {
               marginBottom: "35px",
             }}
           >
-            That's why 1.6+ crore customers trust Zerodha with ~₹6 lakh
-            <p
-              style={{
-                color: "#666",
-                fontSize: "17px",
-                lineHeight: "1.6",
-                marginBottom: "35px",
-              }}
-            >
-              crores of equity investments, making us India’s largest broker;
-              contributing to 15% of daily retail exchange volumes in India.
-            </p>
+            Practice trades using live market price feeds in a safe simulated environment.
           </p>
 
-          <h4 style={{ fontWeight: 500 }}>No spam or gimmicks</h4>
+          <h4 style={{ fontWeight: 500 }}>Zero financial risk</h4>
           <p
             style={{
               color: "#666",
@@ -51,15 +40,10 @@ function Stats() {
               marginBottom: "35px",
             }}
           >
-            No gimmicks, spam, "gamification", or annoying push notifications.
-            High quality apps that you use at your pace, the way you like.
-            <span style={{ color: "#387ed1", cursor: "pointer" }}>
-              {" "}
-              Our philosophies.
-            </span>
+            All trades are executed using virtual capital. Learn without losing real money.
           </p>
 
-          <h4 style={{ fontWeight: 500 }}>The Zerodha universe</h4>
+          <h4 style={{ fontWeight: 500 }}>Performance tracking</h4>
           <p
             style={{
               color: "#666",
@@ -68,21 +52,10 @@ function Stats() {
               marginBottom: "35px",
             }}
           >
-            Not just an app, but a whole ecosystem. Our investments in 30+
-            <p
-              style={{
-                color: "#666",
-                fontSize: "17px",
-                lineHeight: "1.6",
-                marginBottom: "35px",
-              }}
-            >
-              fintech startups offer you tailored services specific to your
-              needs.
-            </p>
+            Track your portfolio growth, P&L, win ratio, and strategy performance.
           </p>
 
-          <h4 style={{ fontWeight: 500 }}>Do better with money</h4>
+          <h4 style={{ fontWeight: 500 }}>Strategy building</h4>
           <p
             style={{
               color: "#666",
@@ -91,24 +64,23 @@ function Stats() {
               marginBottom: "35px",
             }}
           >
-            With initiatives like Nudge and Kill Switch, we don't just
-            facilitate transactions, but actively help you do better with your
-            money.
+            Test swing trading, intraday, and long-term strategies before going live.
           </p>
         </div>
 
         <div className="col-6">
           <div className="d-flex justify-content-center align-items-center">
             <img
-              src="/media/images/ecosystem.png"
-              alt="Ecosystem"
-              style={{
-                width: "108%",
-                maxWidth: "750px",
-                transform: "scale(1.1)",
-                marginLeft: "-1px",
-              }}
-            />
+  src="/media/images/simulation-ecosystem.png"
+  alt="Ecosystem"
+  className="ecosystem-blend"
+  style={{
+    width: "98%",
+    maxWidth: "750px",
+    transform: "scale(1.1)",
+    marginLeft: "-1px",
+  }}
+/>
           </div>
 
           <div className="mt-4 text-end">
@@ -123,7 +95,7 @@ function Stats() {
                 fontSize: "18px",
                 marginRight: "30px",
                 cursor: "pointer",
-                color: "#387ed1",
+                color: "#a78bfa",
               }}
             >
               Explore our products{" "}
@@ -138,7 +110,7 @@ function Stats() {
                 fontSize: "18px",
                 marginRight: "90px",
                 cursor: "pointer",
-                color: "#387ed1",
+                color: "#a78bfa",
               }}
             >
               Try Kite demo <i className="fa-solid fa-arrow-right-long"></i>

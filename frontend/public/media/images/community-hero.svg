@@ -1,0 +1,103 @@
+<svg width="100%" height="100%" viewBox="0 0 1600 900" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect width="1600" height="900" fill="#000000" />
+
+  <defs>
+    <filter id="purpleNeonOuter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feFlood flood-color="#8A2BE2" flood-opacity="0.6"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="tealNeonOuter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#00FFCC" flood-opacity="0.9"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <radialGradient id="networkGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="10%" stop-color="#00FFCC" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#00FFCC" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#0B0E23" stop-opacity="0.0"/>
+    </radialGradient>
+  </defs>
+
+  <style>
+    .title { font-family: 'SF Pro Display', Arial, sans-serif; font-size: 32px; font-weight: 900; fill: #FFFFFF; }
+    .kpi-title { font-family: 'SF Pro Display', Arial, sans-serif; font-size: 20px; font-weight: bold; fill: #FFFFFF; }
+    .user-name { font-family: 'SF Pro Display', Arial, sans-serif; font-size: 14px; font-weight: bold; fill: #FFFFFF; }
+    .user-rank { font-family: Arial, sans-serif; font-size: 12px; fill: #00FFCC; font-weight: bold; }
+  </style>
+
+  <g transform="translate(40, 40) scale(0.6)">
+    <circle cx="30" cy="30" r="18" stroke="#20B2AA" stroke-width="4"/>
+    <path d="M42 42L52 52" stroke="#20B2AA" stroke-width="4" stroke-linecap="round"/>
+    <path d="M30 40C30 40 32 30 45 20M45 20H38M45 20V27" stroke="#00FFCC" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="100" y="70" class="title">ARTHIQ NETWORK</text>
+
+  <g transform="translate(800, 450)">
+    
+    <g filter="url(#purpleNeonOuter)" opacity="0.95">
+      <circle r="120" fill="#141933" stroke="#8A2BE2" stroke-width="5"/>
+      <text x="0" y="-30" class="kpi-title" text-anchor="middle">NETWORK HUB</text>
+      <line x1="-50" y1="20" x2="50" y2="20" stroke="#FFFFFF" stroke-width="3" opacity="0.8"/>
+      <text x="0" y="50" class="user-name" text-anchor="middle">ACTIVE NODES: 6</text>
+    </g>
+    
+    <g filter="url(#tealNeonOuter)" stroke-opacity="0.6">
+      <circle r="200" fill="none" stroke="#00FFCC" stroke-width="1.5" stroke-dasharray="10 20"/>
+      <circle r="300" fill="none" stroke="#00FFCC" stroke-width="1.5" stroke-dasharray="20 15"/>
+      <circle r="400" fill="none" stroke="#00FFCC" stroke-width="1.5" opacity="0.2"/>
+    </g>
+    
+    <g transform="translate(0, -320)" filter="url(#purpleNeonOuter)">
+      <circle r="45" fill="#141933" stroke="#8A2BE2" stroke-width="3"/>
+      <text x="0" y="0" class="user-name" text-anchor="middle">DIVERSITY.AI</text>
+      <text x="0" y="20" class="user-rank" text-anchor="middle">RANK 01</text>
+      <line x1="0" y1="45" x2="0" y2="200" stroke="#00FFCC" stroke-width="2" filter="url(#tealNeonOuter)"/>
+    </g>
+    
+    <g transform="translate(280, -160)" filter="url(#purpleNeonOuter)">
+      <circle r="45" fill="#141933" stroke="#8A2BE2" stroke-width="3"/>
+      <text x="0" y="0" class="user-name" text-anchor="middle">GROWTH.CO</text>
+      <text x="0" y="20" class="user-rank" text-anchor="middle">RANK 02</text>
+      <line x1="-40" y1="40" x2="-180" y2="100" stroke="#00FFCC" stroke-width="2" filter="url(#tealNeonOuter)"/>
+    </g>
+    
+    <g transform="translate(280, 160)" filter="url(#purpleNeonOuter)">
+      <circle r="45" fill="#141933" stroke="#8A2BE2" stroke-width="3"/>
+      <text x="0" y="0" class="user-name" text-anchor="middle">TECH.QUANT</text>
+      <text x="0" y="20" class="user-rank" text-anchor="middle">RANK 03</text>
+      <line x1="-40" y1="-40" x2="-180" y2="-100" stroke="#00FFCC" stroke-width="2" filter="url(#tealNeonOuter)"/>
+    </g>
+    
+    <g transform="translate(0, 320)" filter="url(#purpleNeonOuter)">
+      <circle r="45" fill="#141933" stroke="#8A2BE2" stroke-width="3"/>
+      <text x="0" y="0" class="user-name" text-anchor="middle">MINDSET.TX</text>
+      <text x="0" y="20" class="user-rank" text-anchor="middle">RANK 04</text>
+      <line x1="0" y1="-45" x2="0" y2="-200" stroke="#00FFCC" stroke-width="2" filter="url(#tealNeonOuter)"/>
+    </g>
+    
+    <g transform="translate(-280, 160)" filter="url(#purpleNeonOuter)">
+      <circle r="45" fill="#141933" stroke="#8A2BE2" stroke-width="3"/>
+      <text x="0" y="0" class="user-name" text-anchor="middle">SECURE.FI</text>
+      <text x="0" y="20" class="user-rank" text-anchor="middle">RANK 05</text>
+      <line x1="40" y1="-40" x2="180" y2="-100" stroke="#00FFCC" stroke-width="2" filter="url(#tealNeonOuter)"/>
+    </g>
+    
+    <g transform="translate(-280, -160)" filter="url(#purpleNeonOuter)">
+      <circle r="45" fill="#141933" stroke="#8A2BE2" stroke-width="3"/>
+      <text x="0" y="0" class="user-name" text-anchor="middle">FUTURE.INS</text>
+      <text x="0" y="20" class="user-rank" text-anchor="middle">RANK 06</text>
+      <line x1="40" y1="40" x2="180" y2="100" stroke="#00FFCC" stroke-width="2" filter="url(#tealNeonOuter)"/>
+    </g>
+  </g>
+</svg>

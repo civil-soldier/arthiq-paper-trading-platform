@@ -1,0 +1,93 @@
+<svg width="100%" height="100%" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="800" fill="#0B0E23"/>
+  
+  <defs>
+    <filter id="purpleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#8A2BE2" flood-opacity="0.8"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="tealGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#00FFCC" flood-opacity="0.8"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <g transform="translate(100, 100)" opacity="0.9">
+    <rect width="1000" height="600" rx="16" fill="#141933" filter="url(#purpleGlow)"/>
+    <rect x="2" y="2" width="996" height="596" rx="14" stroke="#8A2BE2" stroke-width="1.5" stroke-dasharray="8 8"/>
+    
+    <text x="40" y="50" fill="white" font-family="Arial, sans-serif" font-weight="bold" font-size="28">
+      DASHBOARD
+    </text>
+    <text x="40" y="90" fill="white" font-family="Arial, sans-serif" font-size="16" opacity="0.6">
+      TRADING &amp; ANALYTICS
+    </text>
+    
+    <g transform="translate(40, 150)" filter="url(#tealGlow)">
+      <rect x="0" y="100" width="10" height="60" rx="2" fill="#00FFCC"/>
+      <rect x="4" y="90" width="2" height="10" rx="1" fill="#00FFCC"/>
+      <rect x="4" y="160" width="2" height="20" rx="1" fill="#00FFCC"/>
+      
+      <rect x="30" y="140" width="10" height="40" rx="2" fill="#FF3366"/>
+      <rect x="34" y="130" width="2" height="10" rx="1" fill="#FF3366"/>
+      <rect x="34" y="180" width="2" height="10" rx="1" fill="#FF3366"/>
+      
+      <rect x="60" y="110" width="10" height="90" rx="2" fill="#00FFCC"/>
+      <rect x="64" y="100" width="2" height="10" rx="1" fill="#00FFCC"/>
+      <rect x="64" y="200" width="2" height="15" rx="1" fill="#00FFCC"/>
+      
+      <rect x="90" y="80" width="10" height="30" rx="2" fill="#00FFCC"/>
+      <rect x="94" y="70" width="2" height="10" rx="1" fill="#00FFCC"/>
+      <rect x="94" y="110" width="2" height="5" rx="1" fill="#00FFCC"/>
+      
+      <rect x="120" y="110" width="10" height="70" rx="2" fill="#FF3366"/>
+      <rect x="124" y="100" width="2" height="10" rx="1" fill="#FF3366"/>
+      <rect x="124" y="180" width="2" height="25" rx="1" fill="#FF3366"/>
+      
+      <path d="M0 250 C 30 200, 60 180, 100 200 S 140 160, 170 190" stroke="#00FFCC" stroke-width="3" fill="none"/>
+    </g>
+    
+    <rect x="250" y="150" width="700" height="150" rx="12" fill="#1A203E" filter="url(#purpleGlow)"/>
+    <text x="270" y="190" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+      MARKET TRENDS
+    </text>
+    
+    <g transform="translate(270, 210)" stroke="#00FFCC" stroke-width="2">
+      <path d="M0 50 L20 30 L40 60 L60 20 L80 40 L100 10 L120 30" fill="none" filter="url(#tealGlow)"/>
+    </g>
+    
+    <g transform="translate(400, 210)" stroke="#FF3366" stroke-width="2">
+      <path d="M0 10 L20 40 L40 20 L60 50 L80 30 L100 60 L120 40" fill="none"/>
+    </g>
+    
+    <rect x="250" y="320" width="300" height="240" rx="12" fill="#1A203E" filter="url(#purpleGlow)"/>
+    <text x="270" y="360" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+      PORTFOLIO
+    </text>
+    
+    <rect x="270" y="400" width="20" height="100" rx="4" fill="#8A2BE2"/>
+    <rect x="300" y="420" width="20" height="80" rx="4" fill="#00FFCC"/>
+    <rect x="330" y="390" width="20" height="110" rx="4" fill="#8A2BE2"/>
+    <rect x="360" y="430" width="20" height="70" rx="4" fill="#00FFCC"/>
+    
+    <rect x="580" y="320" width="370" height="240" rx="12" fill="#1A203E" filter="url(#purpleGlow)"/>
+    <text x="600" y="360" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+      TOP GAINERS
+    </text>
+    
+    <circle cx="610" cy="400" r="10" fill="#00FFCC" filter="url(#tealGlow)"/>
+    <circle cx="610" cy="440" r="10" fill="#FF3366"/>
+    <circle cx="610" cy="480" r="10" fill="#00FFCC"/>
+  </g>
+</svg>

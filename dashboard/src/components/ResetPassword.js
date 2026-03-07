@@ -83,7 +83,7 @@ const handleReset = async () => {
       </div>
 
       <div className="disclaimer">
-        <p>Zerodha Broking Limited: Member of NSE, BSE, MCX ‐ SEBI Reg. no.</p>
+        <p>Arthiq Broking Limited: Member of NSE, BSE, MCX ‐ SEBI Reg. no.</p>
         <p>INZ000031633 | CDSL ‐ SEBI Reg. no. IN-DP-431-2019</p>
         <br />
         <p className="version">v3.0.0</p>

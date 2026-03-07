@@ -1,0 +1,64 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Deep black background -->
+  <rect width="500" height="500" fill="#0f0f1a"/>
+
+  <!-- Subtle background glow -->
+  <defs>
+    <radialGradient id="glowPurple" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+    
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="250" cy="250" r="220" fill="url(#glowPurple)" opacity="0.7"/>
+
+  <!-- Main open lock body (shackle open) -->
+  <g transform="translate(250,250) scale(1.1)">
+    <!-- Shackle (U-shape, open at bottom) -->
+    <path d="M -80,-140 Q -140,-80 -140,0 Q -140,80 -80,140 L 80,140 Q 140,80 140,0 Q 140,-80 80,-140 Z"
+          fill="none" stroke="#6b21a8" stroke-width="28" stroke-linecap="round" opacity="0.85"/>
+    <path d="M -80,-140 Q -140,-80 -140,0 Q -140,80 -80,140"
+          fill="none" stroke="#a855f7" stroke-width="12" stroke-linecap="round" filter="url(#softGlow)"/>
+
+    <!-- Lock body -->
+    <rect x="-100" y="-40" width="200" height="140" rx="28" fill="#1e1b32" stroke="#4c1d95" stroke-width="5"/>
+    <rect x="-92" y="-32" width="184" height="124" rx="24" fill="none" stroke="#7c3aed" stroke-width="3" opacity="0.6" filter="url(#softGlow)"/>
+
+    <!-- Keyhole with subtle purple core -->
+    <circle cx="0" cy="30" r="18" fill="#2e1a47"/>
+    <circle cx="0" cy="30" r="9" fill="#c084fc" filter="url(#softGlow)"/>
+    <path d="M -6,30 L 6,30 M 0,24 L 0,36" stroke="#a855f7" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Financial chart elements integrated into / across the lock -->
+    <!-- Rising trend line cutting through -->
+    <path d="M -180,-120 L -140,-80 L -100,-110 L -60,-40 L -20,-70 L 20,-10 L 60,-50 L 100,20 L 140,-10 L 180,40"
+          fill="none" stroke="url(#lineGradient)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" filter="url(#softGlow)"/>
+
+    <!-- Small candlesticks / bars around the sides -->
+    <!-- Left side -->
+    <rect x="-165" y="-95" width="12" height="70" rx="3" fill="#a855f7" opacity="0.8"/>
+    <rect x="-165" y="-45" width="12" height="20" fill="#4c1d95"/>
+
+    <!-- Right side -->
+    <rect x="153" y="-20" width="12" height="90" rx="3" fill="#7c3aed" opacity="0.8"/>
+    <rect x="153" y="30" width="12" height="25" fill="#4c1d95"/>
+
+    <!-- Tiny percentage text (nod to growth) -->
+    <text x="0" y="-165" font-family="system-ui, sans-serif" font-size="42" font-weight="bold" fill="#e0bbff" text-anchor="middle" filter="url(#softGlow)">78.4%</text>
+    <text x="0" y="-125" font-family="system-ui, sans-serif" font-size="18" fill="#a855f7" text-anchor="middle" opacity="0.9">Unlocked Growth</text>
+  </g>
+</svg>

@@ -109,7 +109,7 @@ const handleLogin = async () => {
       {/* Disclaimer */}
       <div className="disclaimer">
         <p>
-          Zerodha Broking Limited: Member of{" "}
+          Arthiq Broking Limited: Member of{" "}
           <a href="https://www.nseindia.com/">NSE</a>,{" "}
           <a href="https://www.bseindia.com/">BSE</a>,{" "}
           <a href="https://www.mcxindia.com/">MCX</a> ‐ SEBI Reg. no.

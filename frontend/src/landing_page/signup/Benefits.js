@@ -6,49 +6,48 @@ function Benefits() {
       <div className="row align-items-start">
 
         {/* LEFT SIDE */}
-        <div className="col-md-5 text-center text-align-center mt-5">
-          <img
-            src="/media/images/acop-benefits.svg"
-            alt="Benefits"
-            className="benefits-image"
-          />
-          <h2 className="benefits-title ">
-            Benefits of opening a Zerodha demat account
-          </h2>
-        </div>
+       <div className="col-md-5 benefits-left">
+  <div className="benefits-image-wrapper">
+    <img
+      src="/media/images/acop.png"
+      alt="Benefits"
+      className="benefits-image"
+    />
+  </div>
+
+  <h2 className="benefits-title">
+    Benefits of using Arthiq
+  </h2>
+</div>
 
         {/* RIGHT SIDE */}
-        <div className="col-md-6 p-4 mt-5" style={{marginLeft:"90px"}}>
+        <div className="col-md-6 benefits-right">
           <div className="benefit-item">
-            <h4 >Unbeatable pricing</h4>
-            <p>
-              Zero charges for equity & mutual fund investments. Flat ₹20
-              fees for intraday and F&O trades.
-            </p>
+            <h4>Completely risk-free</h4>
+<p>
+  Trade using virtual capital and experiment freely without financial loss.
+</p>
           </div>
 
           <div className="benefit-item">
-            <h4>Best investing experience</h4>
-            <p>
-              Simple and intuitive trading platform with an
-              easy-to-understand user interface.
-            </p>
+            <h4>Real-time market simulation</h4>
+<p>
+  Experience live market conditions with realistic price movements.
+</p>
           </div>
 
           <div className="benefit-item">
-            <h4>No spam or gimmicks</h4>
-            <p>
-              Committed to transparency — no gimmicks, spam,
-              “gamification”, or intrusive push notifications.
-            </p>
+            <h4>Focused learning environment</h4>
+<p>
+  No distractions. Just clean tools to practice and improve your strategy.
+</p>
           </div>
 
           <div className="benefit-item">
-            <h4>The Zerodha universe</h4>
-            <p>
-              More than just an app — gain free access to the
-              entire ecosystem of our partner products.
-            </p>
+            <h4>Track and analyze performance</h4>
+<p>
+  Review your trades, win-rate, and portfolio growth with built-in analytics.
+</p>
           </div>
         </div>
 

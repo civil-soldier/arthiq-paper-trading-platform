@@ -1,0 +1,127 @@
+<svg width="900" height="620" viewBox="0 0 900 620" xmlns="http://www.w3.org/2000/svg">
+  <!-- Deep dark background -->
+  <rect width="900" height="620" fill="#0a0c1a"/>
+
+  <!-- Ambient neon glow backdrop -->
+  <defs>
+    <radialGradient id="ambient" cx="50%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.14"/>
+      <stop offset="60%" stop-color="#14b8a6" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#14b8a6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="chartGlow" x1="0%" y1="20%" x2="100%" y2="80%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+
+    <filter id="neon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="soft" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <circle cx="450" cy="240" r="380" fill="url(#ambient)"/>
+
+  <!-- Large holographic trading dashboard -->
+  <g>
+    <!-- Main dashboard panel -->
+    <rect x="190" y="110" width="520" height="340" rx="26" fill="#161b22" stroke="#334155" stroke-width="3"/>
+    
+    <!-- Inner neon frame -->
+    <rect x="195" y="115" width="510" height="330" rx="22" fill="none" stroke="#7c3aed" stroke-width="4" opacity="0.45" filter="url(#neon)"/>
+    <rect x="202" y="122" width="496" height="316" rx="18" fill="none" stroke="#14b8a6" stroke-width="2.5" opacity="0.35" filter="url(#soft)"/>
+
+    <!-- Dashboard content panels -->
+    <!-- Left panel: candlestick chart -->
+    <rect x="225" y="145" width="170" height="170" rx="12" fill="#0f172a"/>
+    <!-- Candlesticks -->
+    <rect x="240" y="170" width="12" height="95" rx="2" fill="#a855f7"/>
+    <rect x="258" y="195" width="12" height="70" rx="2" fill="#22d3ee"/>
+    <rect x="276" y="155" width="12" height="110" rx="2" fill="#a855f7"/>
+    <rect x="294" y="185" width="12" height="80" rx="2" fill="#22d3ee"/>
+    <rect x="312" y="165" width="12" height="100" rx="2" fill="#a855f7"/>
+
+    <!-- Center panel: line chart -->
+    <rect x="410" y="145" width="180" height="170" rx="12" fill="#0f172a"/>
+    <path d="M425,250 Q470,190 515,215 Q560,165 575,225" 
+          fill="none" stroke="#c084fc" stroke-width="9" stroke-linecap="round" filter="url(#neon)"/>
+    <path d="M425,250 Q470,190 515,215 Q560,165 575,225" 
+          fill="none" stroke="#22d3ee" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- Right panel: bar chart -->
+    <rect x="605" y="145" width="85" height="170" rx="12" fill="#0f172a"/>
+    <rect x="618" y="190" width="14" height="105" rx="3" fill="#a855f7"/>
+    <rect x="638" y="165" width="14" height="130" rx="3" fill="#14b8a6"/>
+    <rect x="658" y="205" width="14" height="90" rx="3" fill="#a855f7"/>
+  </g>
+
+  <!-- Developers - flat minimal vector silhouettes (matching reference composition) -->
+
+  <!-- Left developer (man pointing at screen) - dark shirt -->
+  <g>
+    <!-- Head -->
+    <circle cx="230" cy="315" r="28" fill="#e2e8f0"/>
+    <!-- Hair -->
+    <path d="M205 295 Q215 275 245 280 Q255 290 250 305" fill="#1e2937"/>
+    <!-- Body (shirt) -->
+    <rect x="200" y="340" width="60" height="120" rx="18" fill="#1e2937"/>
+    <!-- Arm pointing -->
+    <path d="M255 355 L310 310 L325 305 L310 295 Z" fill="#1e2937"/>
+    <!-- Hand highlight -->
+    <circle cx="325" cy="300" r="9" fill="#cbd5e1"/>
+  </g>
+
+  <!-- Center developer (hoodie guy gesturing) -->
+  <g>
+    <!-- Head -->
+    <circle cx="450" cy="325" r="29" fill="#e2e8f0"/>
+    <!-- Hair -->
+    <path d="M425 300 Q435 280 465 282 Q475 295 470 310" fill="#1e2937"/>
+    <!-- Hoodie body -->
+    <rect x="415" y="350" width="72" height="125" rx="20" fill="#111827"/>
+    <!-- Hoodie highlight -->
+    <path d="M415 355 Q440 370 480 355" fill="none" stroke="#334155" stroke-width="14"/>
+    <!-- Left hand open -->
+    <path d="M415 375 Q380 390 375 410 Q385 415 400 400 Z" fill="#1e2937"/>
+    <!-- Right hand open -->
+    <path d="M500 370 Q535 385 545 405 Q530 410 515 390 Z" fill="#1e2937"/>
+  </g>
+
+  <!-- Right developer (woman observing) -->
+  <g>
+    <!-- Head -->
+    <circle cx="670" cy="315" r="27" fill="#e2e8f0"/>
+    <!-- Hair (long) -->
+    <path d="M650 290 Q645 260 660 255 Q685 255 695 285 Q690 310 675 315" fill="#1e2937"/>
+    <!-- Jacket body -->
+    <rect x="640" y="340" width="60" height="125" rx="18" fill="#1e2937"/>
+    <!-- Jacket detail line -->
+    <rect x="655" y="355" width="8" height="80" fill="#334155"/>
+  </g>
+
+  <!-- Subtle connection lines (collaboration network) -->
+  <g fill="none" stroke="#64748b" stroke-width="2.5" opacity="0.35">
+    <path d="M255 340 Q310 280 410 260" stroke="#a855f7" stroke-dasharray="3 2"/>
+    <path d="M490 355 Q530 310 610 280" stroke="#14b8a6" stroke-dasharray="3 2"/>
+    <path d="M670 355 Q590 290 490 255" stroke="#7c3aed"/>
+  </g>
+
+  <!-- Small floating collaboration nodes -->
+  <circle cx="310" cy="235" r="7" fill="#c084fc" filter="url(#soft)"/>
+  <circle cx="520" cy="200" r="6" fill="#22d3ee" filter="url(#soft)"/>
+  <circle cx="640" cy="255" r="8" fill="#a855f7" filter="url(#soft)"/>
+
+</svg>

@@ -277,19 +277,31 @@ const DetailsPage = () => {
 
         {/* Photo */}
         <section>
-          <h3>Profile photo</h3>
-          <div className="photo-upload">
-            {preview ? (
-              <img src={preview} alt="preview" />
-            ) : (
-              <div className="photo-placeholder">Photo</div>
-            )}
-            <input type="file" accept="image/*" onChange={handleImageChange} />
-          </div>
-          {touched && errors.profileImage && (
-            <p className="error-text">{errors.profileImage}</p>
-          )}
-        </section>
+  <h3>Profile photo</h3>
+
+  <div className="photo-upload">
+    {preview ? (
+      <img src={preview} alt="preview" className="photo-preview" />
+    ) : (
+      <div className="photo-placeholder">Photo</div>
+    )}
+
+    <label className="upload-btn">
+      Upload photo
+      <input
+        type="file"
+        accept="image/*"
+        onChange={handleImageChange}
+      />
+    </label>
+
+    <small>Allowed size: 15KB – 100KB</small>
+  </div>
+
+  {touched && errors.profileImage && (
+    <p className="error-text">{errors.profileImage}</p>
+  )}
+</section>
 
         <button
           className="primary-btn"

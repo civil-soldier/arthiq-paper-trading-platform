@@ -1,65 +1,56 @@
-import React from 'react'
-import Hero from './Hero';
-import LeftSection from './LeftSection';
-import RightSection from './RightSection';
-import Universe from './Universe';
+import React from "react";
 
 function ProductPage() {
-    return ( 
-        <>
-        <Hero />
-        <LeftSection 
-        imageURL="/media/images/kite.png"
-        productName="Kite" 
-        productDescription="Our ultra-fast flagship trading platform with streaming market data, advanced charts, an elegant UI, and more. Enjoy the Kite experience seamlessly on your Android and iOS devices." 
-        tryDemo="" 
-        learnMore="" 
-        googlePlay="" 
-        appStore="" 
-        />
+  return (
+    <div className="products-wrapper">
 
-        <RightSection
-        imageURL="/media/images/console.png"
-        productName="Console" 
-        productDescription="The central dashboard for your Zerodha account. Gain insights into your trades and investments with in-depth reports and visualisations."
-        learnMore="" />
+      {/* HERO */}
+      <div className="products-hero text-center">
+        <h1>Everything you need to master the markets</h1>
+        <p>
+          Arthiq provides a powerful virtual trading environment designed
+          for learning, testing and improving your strategies.
+        </p>
+      </div>
 
-        <LeftSection 
-        imageURL="/media/images/coin.png"
-        productName="Coin" 
-        productDescription="Buy direct mutual funds online, commission-free, delivered directly to your Demat account. Enjoy the investment experience on your Android and iOS devices." 
-        tryDemo="" 
-        learnMore=""
-        googlePlay="" 
-        appStore="" 
-        />
-
-        <RightSection
-        imageURL="/media/images/kiteconnect.png"
-        productName="Kite Connect API" 
-        productDescription="Build powerful trading platforms and experiences with our super simple HTTP/JSON APIs. If you are a startup, build your investment app and showcase it to our clientbase." 
-        tryDemo="" 
-        learnMore=""  />
-
-        <LeftSection 
-        imageURL="/media/images/varsity.png"
-        productName="Varsity mobile" 
-        productDescription="An easy to grasp, collection of stock market lessons with in-depth coverage and illustrations. Content is broken down into bite-size cards to help you learn on the go."
-        tryDemo="" 
-        learnMore="" 
-        googlePlay="" 
-        appStore="" 
-        />
-
-        <div className="container hero-section">
-            <div className="row  text-center d-flex flex-column align-items-center">
-                <p style={{fontWeight: 400, fontSize: "20px"}}>Want to know more about our technology stack? Check out the <a href='#' className='hero-section' style={{ fontWeight: 500, fontSize: "20px" }}>Zerodha.tech</a> blog.</p>
-            </div>       
+      {/* PRODUCT 1 */}
+      <div className="product-card">
+        <div className="product-text">
+          <h2>Arthiq Trader</h2>
+          <p>
+            Experience real-market simulations with virtual capital.
+            Place trades, manage positions and track performance in real-time.
+          </p>
         </div>
+        <img src="/media/images/trader.svg" alt="Trader" />
+      </div>
 
-        <Universe/>
-        </>
-     );
+      {/* PRODUCT 2 */}
+      <div className="product-card reverse">
+        <div className="product-text">
+          <h2>Arthiq Insights</h2>
+          <p>
+            Advanced analytics and performance tracking tools to
+            understand your trading behavior and improve decisions.
+          </p>
+        </div>
+        <img src="/media/images/insights.svg" alt="Insights" />
+      </div>
+
+      {/* PRODUCT 3 */}
+      <div className="product-card">
+        <div className="product-text">
+          <h2>Arthiq Learn</h2>
+          <p>
+            Bite-sized educational modules designed to help you
+            understand markets, risk management and strategy building.
+          </p>
+        </div>
+        <img src="/media/images/learn.svg" alt="Learn" />
+      </div>
+
+    </div>
+  );
 }
 
 export default ProductPage;
