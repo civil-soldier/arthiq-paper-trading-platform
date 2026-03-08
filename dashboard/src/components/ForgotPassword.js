@@ -36,7 +36,7 @@ const handleSubmit = async () => {
   return (
     <div className="login-page">
       <div className="login-card">
-        <h3 style={{ marginBottom: "20px" }}>Forgot password</h3>
+        <h3 style={{ marginBottom: "20px"}}>Forgot password</h3>
 
         <input
           type="email"
@@ -72,13 +72,8 @@ const handleSubmit = async () => {
         </div>
       </div>
 
-      <div className="apps">
-        <img src="/android.svg" alt="Android App" />
-        <img src="/apple.svg" alt="iOS App" />
-      </div>
-
       <a className="logo" href={`${LANDING_URL}/`}>
-        <img src="/zerodha-logo.svg" alt="Zerodha Logo" />
+        <img src="/Arthiq-logo.svg" alt="Zerodha Logo" />
       </a>
 
       <div className="login-footer">

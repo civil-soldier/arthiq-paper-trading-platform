@@ -58,7 +58,7 @@ const initials = name
               onClick={() => handleMenuClick(0)}
             >
               <p className={selectedMenu === 0 ? activeMenuClass : menuClass}>
-                <img src="logo.png" style={{ width: "30px" , height: "20px" , marginTop:"7px" }} />
+                <img src="logo.svg" style={{ width: "40px" , height: "30px" , marginTop:"7px" }} />
               </p>
             </Link>
       

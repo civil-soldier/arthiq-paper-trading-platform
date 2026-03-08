@@ -1,0 +1,14 @@
+<svg width="512" height="512" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g512" x1="40" y1="40" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff5a1f" /><stop offset="100%" stop-color="#ff3c00" />
+    </linearGradient>
+    <filter id="glow512" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur" /><feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <path d="M100 30L165 145H135L100 80L65 145H35L100 30Z" fill="url(#g512)" filter="url(#glow512)"/>
+  <path d="M100 110L120 150H105V170H95V150H80L100 110Z" fill="#FFFFFF" fill-opacity="0.9"/>
+  <rect x="60" y="155" width="20" height="4" rx="2" fill="url(#g512)" fill-opacity="0.6" />
+  <rect x="120" y="155" width="20" height="4" rx="2" fill="url(#g512)" fill-opacity="0.6" />
+</svg>

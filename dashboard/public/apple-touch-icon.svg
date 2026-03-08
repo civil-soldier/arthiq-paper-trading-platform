@@ -1,0 +1,10 @@
+<svg width="180" height="180" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" rx="40" fill="white"/> <defs>
+    <linearGradient id="apple_grad" x1="40" y1="40" x2="160" y2="160" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff5a1f" />
+      <stop offset="100%" stop-color="#ff3c00" />
+    </linearGradient>
+  </defs>
+  <path d="M100 40L155 135H130L100 85L70 135H45L100 40Z" fill="url(#apple_grad)"/>
+  <path d="M100 110L115 140H105V160H95V140H85L100 110Z" fill="#000000" fill-opacity="0.8"/>
+</svg>
