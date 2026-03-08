@@ -14,6 +14,7 @@ function Navbar() {
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .zerodha-container {

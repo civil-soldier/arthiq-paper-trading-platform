@@ -104,28 +104,28 @@ Built for learners, developers & market enthusiasts.<br/><br/>
             </p>
 
             <div className="footer-icons">
-              <a href="#">
+              <a href="/">
                 <i className="fa-brands fa-x-twitter"></i>
               </a>
-              <a href="#">
+              <a href="/">
                 <i className="fa-brands fa-facebook"></i>
               </a>
-              <a href="#">
+              <a href="/">
                 <i className="fa-brands fa-instagram"></i>
               </a>
-              <a href="#">
+              <a href="/">
                 <i className="fa-brands fa-linkedin"></i>
               </a>
 
               <hr></hr>
 
-              <a href="#">
+              <a href="/">
                 <i className="fa-brands fa-youtube"></i>
               </a>
-              <a href="#">
+              <a href="/">
                 <i className="fa-brands fa-whatsapp"></i>
               </a>
-              <a href="#">
+              <a href="/">
                 <i className="fa-brands fa-telegram"></i>
               </a>
             </div>
@@ -275,13 +275,13 @@ All trading activities performed on Arthiq are simulated using virtual capital a
             </p>
 
             <div className="footer-bottom-menu">
-              <a href="#">Terms & conditions</a>
-              <a href="#">Privacy policy</a>
-              <a href="#">Disclaimer</a>
-              <a href="#">Open Source License</a>
-              <a href="#">Community Guidelines</a>
-              <a href="#">Security Policy</a>
-              <a href="#">Report Vulnerability</a>
+              <a href="/">Terms & conditions</a>
+              <a href="/">Privacy policy</a>
+              <a href="/">Disclaimer</a>
+              <a href="/">Open Source License</a>
+              <a href="/">Community Guidelines</a>
+              <a href="/">Security Policy</a>
+              <a href="/">Report Vulnerability</a>
             </div>
 
             <div
