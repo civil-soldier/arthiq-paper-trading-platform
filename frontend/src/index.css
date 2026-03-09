@@ -2475,7 +2475,7 @@ hr,
   border-bottom: 1px solid rgba(255,255,255,0.05);
 }
 
-.navbar {
+.zerodha-nav {
   position: sticky;
   top: 0;
   z-index: 2000;
@@ -3328,8 +3328,6 @@ hr,
 
 .account-active-wrapper {
   min-height: 100vh;
-  height: 100vh;
-  overflow: hidden;   /* removes page scroll */
   background: radial-gradient(
       circle at 30% 40%,
       rgba(124, 58, 237, 0.15),
@@ -3447,3 +3445,22 @@ hr,
   justify-content: space-between;
 }
 
+.zerodha-nav {
+  background-color: #161625;
+  border-bottom: 1px solid #2a2a3d;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+}
+
+.zerodha-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

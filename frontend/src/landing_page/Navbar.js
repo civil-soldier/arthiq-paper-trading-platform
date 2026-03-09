@@ -14,14 +14,16 @@ function Navbar() {
   box-shadow: 0 2px 40px rgba(0, 0, 0, 0.4);
   display: flex;
   align-items: center;
-  position: relative;
+
+  position: sticky;
+  top: 0;
+  z-index: 3000;
 }
 
 .zerodha-container {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;                /* ensure proper centering */
-  display: flex;
   align-items: center;
   padding: 0 12px;               /* symmetric padding */
 }
@@ -45,12 +47,19 @@ function Navbar() {
 
 .navbar-brand img {
   width: 120px;
-  margin-left: 38px;
-  transform: translateY(0);
+  margin-left: 0;
 }
 
 .navbar-nav {
   gap: 22px;
+}
+
+.navbar-toggler {
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
 }
 
 .navbar-toggler i {
@@ -66,7 +75,7 @@ function Navbar() {
 
       {/* Navbar HTML */}
       <nav className="navbar zerodha-nav navbar-expand-lg p-2">
-        <div className="container-fluid zerodha-container">
+        <div className="container-fluid">
           {/* Logo */}
           <Link className="navbar-brand" to={"/"}>
             <img src="media/images/logo1.svg" alt="Logo" />
@@ -104,7 +113,7 @@ function Navbar() {
                   Support
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item">
                 <button
                   className="nav-link dropdown-toggle"
                   type="button"

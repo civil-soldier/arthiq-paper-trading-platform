@@ -68,13 +68,8 @@ const handleReset = async () => {
         )}
       </div>
 
-      <div className="apps">
-        <img src="/android.svg" alt="Android App" />
-        <img src="/apple.svg" alt="iOS App" />
-      </div>
-
       <a className="logo" href={`${LANDING_URL}/`}>
-        <img src="/zerodha-logo.svg" alt="Zerodha Logo" />
+        <img src="/Arthiq-logo.svg" alt="Zerodha Logo" />
       </a>
 
       <div className="login-footer">
