@@ -31,7 +31,8 @@ const allowedOrigins = [
 
 app.use(cors({
   origin: [
-    "https://arthiq-paper-trading-platform-28xr.vercel.app"
+    "https://arthiq-paper-trading-platform-28xr.vercel.app",
+    "https://zerodha-paper-trading-platform.vercel.app/"
   ],
   credentials: true,
   methods: ["GET","POST","PUT","DELETE","OPTIONS"],
