@@ -1,0 +1,17 @@
+name: Arthiq CI/CD
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Deploy on EC2
+        run: |
+          cd /home/ubuntu/arthiq-paper-trading-platform/backend
+          git pull origin main
+          npm install
+          pm2 reload all
